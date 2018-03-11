@@ -1,0 +1,24 @@
+数据表中有如下字段：
+
+intersection_id : 路口id
+tollgate_id: 收费站id
+注：
+intersection_id 和 tollgate_id 表述一个路径：
+如路径 “B”, 3  就是指从B收费站到3这个路口这段路径
+
+vehicle_id: 车辆id
+starting_time: 进入该路段的开始时间
+travel_seq: 该车走过该路径下每个路段的路段id#开始时间#通行时间
+travel_time: 该车走过改路径所用时间
+
+要求：
+
+(1)	统计不同路段内 travel_time的均值、标准差、最大值、最小值、中位数
+(2)	一天按照24小时，统计不同小时内travel_time的均值、标准差、最大值、最小值、中位数
+(3)	统计不同路段不同小时内travel_time的均值、标准差、最大值、最小值、中位数
+(4)	可视化一天内，按照每小时统计的车流量、通行时间图
+(5)	总结数据特点
+
+
+
+
