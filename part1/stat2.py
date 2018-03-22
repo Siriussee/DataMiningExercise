@@ -70,10 +70,8 @@ unique_road_id = np.unique(road_id)
 print 'unique road id count = ',
 print len(unique_road_id)
 
-'''
 for each in unique_road_id:
     get_status_according_to_road_id(each)
-'''
 
 unique_date_id = np.unique(date_id)
 # print unique_date_id

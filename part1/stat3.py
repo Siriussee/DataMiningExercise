@@ -30,8 +30,27 @@ for each in single_travel_seq:
 
 mean_time_spent = []
 for x in range(24):
+    sum = 0
+    count = 0
     for each in target_data:
         if x == each[0]:
+            print each[1]
+            sum += each[1]
+            count = count+1
+    if count == 0:
+        mean_time_spent.append(0)
+    else:        
+        mean_time_spent.append(sum/count)
+
+# print mean_time_spent
+
+series_mean_time_spent = pd.Series(mean_time_spent)
+
+print series_mean_time_spent
+
+plt.plot(series_mean_time_spent.index, series_mean_time_spent)
+
+plt.show()
             
 
 
